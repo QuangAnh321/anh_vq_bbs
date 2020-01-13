@@ -1,6 +1,6 @@
-@(post: Option[Post])
-@main(post.get.title) {
-    <h1>@post.get.title</h1>
-    <p>@post.get.content</p>
-    <p>Author: @post.get.user.get.email</p>
+@(post: Post)
+@main(post.title) {
+    <h1>@post.title</h1>
+    <h3>@post.userEmail</h3>
+    <p>@post.content</p>
 }

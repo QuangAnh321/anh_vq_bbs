@@ -8,7 +8,7 @@ import play.api.db.evolutions._
 
 trait DBSettingTest {
   val driver = "com.mysql.jdbc.Driver"
-  val url = "jdbc:mysql://127.0.0.1:3306/anh_vq_bbs"
+  val url = "jdbc:mysql://127.0.0.1:3306/anh_vq_bbs_test"
   val username = "root"
   val password = "3574687a@"
   val database = Databases(

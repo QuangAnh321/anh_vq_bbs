@@ -10,7 +10,11 @@ class PostRepository {
     Post.findAll()
   }
 
-  def getById(id: Int) = Try {
-    Post.findById(id)
+  def getById(id: Int): Option[Post] = {
+    try {
+      Post.findById(id)
+    } catch {
+      case _: Exception => throw new Exception("Not Found")
+    }
   }
 }
